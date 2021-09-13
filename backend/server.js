@@ -64,5 +64,10 @@ app.get('/lyrics', async (req,res) => {
     res.json( {lyrics} )
 })
 
+app.get('/', (req,res) => {
+
+    res.json( { text : 'hello' })
+})
+
 app.listen(4001);
 
